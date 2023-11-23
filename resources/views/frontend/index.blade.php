@@ -96,7 +96,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#Pernyataan" role="tab" aria-controls="dashboard" aria-selected="false">
+                            <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#pernyataan" role="tab" aria-controls="dashboard" aria-selected="false">
                             Step 7
                             </a>
                         </li>
@@ -105,13 +105,13 @@
                 <div class="col-lg-12 mb-5 mb-lg-0">
                     <div class="card mb-5 mb-xl-0">
                         <div class="card-body p-5">
-                            <div class="tab-content" id="myTabContent">
-                                <!-- Data Diri -->
-                                <div class="tab-pane fade show active" id="data-diri">
-                                    <h4 class="fw-bolder text-center mb-4">Data Diri Calon Peserta Didik</h4>
-                                    <hr class="horizontal dark mb-4">
-                                    <form method="POST" action="{{ route('register.perform') }}">
-                                        @csrf
+                            <form method="POST" action="{{ route('register.perform') }}">
+                                @csrf
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- Data Diri -->
+                                    <div class="tab-pane fade show active" id="data-diri">
+                                        <h4 class="fw-bolder text-center mb-4">Data Diri Calon Peserta Didik</h4>
+                                        <hr class="horizontal dark mb-4">                                        
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -250,29 +250,26 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <!-- Data prestrasi -->
-                                <div class="tab-pane fade show" id="data-prestasi">
-                                    <h4 class="fw-bolder text-center mb-4">Data Prestasi Calon Peserta Didik</h4>
-                                    <hr class="horizontal dark mb-4">
-                                    <form method="POST" action="{{ route('register.perform') }}">
-                                        @csrf
+                                    </div>
+                                    <!-- Data Prestrasi -->
+                                    <div class="tab-pane fade show" id="data-prestasi">
+                                        <h4 class="fw-bolder text-center mb-4">Data Prestasi Calon Peserta Didik</h4>
+                                        <hr class="horizontal dark mb-4">
                                         <div class="row">
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase text-uppercase">
                                                 Nilai Rapor <b>Matematika</b>
                                                 Semester 3-5
                                             </p>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 3</label>
-                                                    <input class="form-control" type="number" name="username">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 4</label>
-                                                    <input class="form-control" type="number" name="email">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -281,20 +278,20 @@
                                                     <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase">
                                                 Nilai Rapor <b>IPA</b>
                                                 Semester 3-5
                                             </p>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 3</label>
-                                                    <input class="form-control" type="number" name="username">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 4</label>
-                                                    <input class="form-control" type="number" name="email">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -303,20 +300,20 @@
                                                     <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase">
                                                 Nilai Rapor <b>Bahasa Indonesia</b>
                                                 Semester 3-5
                                             </p>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 3</label>
-                                                    <input class="form-control" type="number" name="username">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 4</label>
-                                                    <input class="form-control" type="number" name="email">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -325,20 +322,20 @@
                                                     <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase">
                                                 Nilai Rapor <b>Bahasa Inggris</b>
                                                 Semester 3-5
                                             </p>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 3</label>
-                                                    <input class="form-control" type="number" name="username">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 4</label>
-                                                    <input class="form-control" type="number" name="email">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -347,20 +344,20 @@
                                                     <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase">
                                                 Nilai Rapor <b>Agama Islam</b>
                                                 Semester 3-5
                                             </p>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 3</label>
-                                                    <input class="form-control" type="number" name="username">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Semester 4</label>
-                                                    <input class="form-control" type="number" name="email">
+                                                    <input class="form-control" type="number" name="">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -423,25 +420,22 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <!-- Data orangtua -->
-                                <div class="tab-pane fade show" id="data-orangtua">
-                                    <h4 class="fw-bolder text-center mb-4">Data Orangtua/Wali Calon Peserta Didik</h4>
-                                    <hr class="horizontal dark mb-4">
-                                    <form method="POST" action="{{ route('register.perform') }}">
-                                        @csrf
+                                    </div>
+                                    <!-- Data Orangtua/wali -->
+                                    <div class="tab-pane fade show" id="data-orangtua">
+                                        <h4 class="fw-bolder text-center mb-4">Data Orangtua/Wali Calon Peserta Didik</h4>
+                                        <hr class="horizontal dark mb-4">
                                         <div class="row">
                                             <!-- Data Ayah -->
                                             <div class="col-md-6">
-                                                <p class="text-sm">
+                                                <p class="text-sm text-uppercase">
                                                     Data Ayah Kandung
                                                 </p>
                                                 <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label">Nama Ayang Kandung</label>
+                                                    <label for="example-text-input" class="form-control-label">Nama Ayah Kandung</label>
                                                     <input class="form-control" type="text" name="">
                                                 </div>
-                                       
+                                    
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Pendidikan Terakhir</label>
                                                     <select class="form-control" name="" id="">
@@ -464,7 +458,7 @@
                                                     <br><small><i>(Tuliskan rata-rata penghasilan perbulan)</i></small>
                                                     <input class="form-control" type="text" name="">
                                                 </div>
-                                           
+                                        
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Pendapatan di luar penghasilan pokok perbulan</label>
                                                     <br><small><i>(tuliskan rata-rata penghasilan perbulan),</i> Jika tidak ada isi dengan (-)</small>
@@ -483,14 +477,14 @@
                                             </div>
                                             <!-- Data Ibu -->
                                             <div class="col-md-6">
-                                                <p class="text-sm">
+                                                <p class="text-sm text-uppercase">
                                                     Data Ibu Kandung
                                                 </p>
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Nama Ibu Kandung</label>
                                                     <input class="form-control" type="text" name="">
                                                 </div>
-                                       
+                                    
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Pendidikan Terakhir</label>
                                                     <select class="form-control" name="" id="">
@@ -513,7 +507,7 @@
                                                     <br><small><i>(Tuliskan rata-rata penghasilan perbulan)</i></small>
                                                     <input class="form-control" type="text" name="">
                                                 </div>
-                                           
+                                        
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Pendapatan di luar penghasilan pokok perbulan</label>
                                                     <br><small><i>(tuliskan rata-rata penghasilan perbulan),</i> Jika tidak ada isi dengan (-)</small>
@@ -540,7 +534,8 @@
                                             </div>
                                         </div>
                                         <hr class="horizontal dark mb-4">
-                                        <p class="text-sm">
+                                        <!-- Data Wali -->
+                                        <p class="text-sm text-uppercase">
                                             Data Wali <i>(Jika ada)</i>
                                         </p>
                                         <div class="row">
@@ -608,7 +603,7 @@
                                                 </div>
                                             </div>
                                             <hr class="horizontal dark mb-4">
-                                            <p class="text-sm">
+                                            <p class="text-sm text-uppercase">
                                                 Kerabat/Relawan yang Dapat Dihubungi
                                                 <br><small><i>(Sebagai Fasilitator/Penghubung Calon Siswa dengan Sekolah Selama Proses Seleksi PPDB Berlangsung)</i></small>
                                             </p>
@@ -659,9 +654,382 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <!-- Tempat Tinggal -->
+                                    <div class="tab-pane fade show" id="tempat-tinggal">
+                                        <h4 class="fw-bolder text-center mb-4">Rumah Tinggal dan Fasilitas Keluarga</h4>
+                                        <hr class="horizontal dark mb-4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Status Kepemilikan Rumah</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Sendiri</option>
+                                                        <option value="2">Sewa Tahunan</option>
+                                                        <option value="3">Sewa Bulanan</option>
+                                                        <option value="4">Bebas Sewa</option>
+                                                        <option value="5">Rumah Dinas</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Tahun Perolehan</label>
+                                                    <input class="form-control" type="number" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Kualitas Rumah</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Layak Huni</option>
+                                                        <option value="2">Setengah Layak Huni</option>
+                                                        <option value="3">Tidak Layak Huni</option>
+                                                        <option value="4">Yang Lain</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Luas Tanah</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">< 25 m2</option>
+                                                        <option value="1">25-50 m2</option>
+                                                        <option value="1">50-99 m2</option>
+                                                        <option value="1">100-200 m2</option>
+                                                        <option value="1">> 200 m2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Mandi, Cuci, dan Kakus</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Kepemilikan sendiri di dalam rumah</option>
+                                                        <option value="2">Kepemilikan sendiri di luar rumah</option>
+                                                        <option value="3">Berbagi pakai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Sumber Air</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">PDAM</option>
+                                                        <option value="1">Sumur</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Daya Listrik</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Tidak Ada</option>
+                                                        <option value="2">450 kWh</option>
+                                                        <option value="3">900 kWh</option>
+                                                        <option value="4">1300 kWh</option>
+                                                        <option value="5">>1300 kWh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Harta Tidak Bergerak</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Sawah</option>
+                                                        <option value="2">Ladang</option>
+                                                        <option value="3">Kolam</option>
+                                                        <option value="4">Tanah</option>
+                                                        <option value="5">Tidak Ada</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Status Kepemilikan Harta Tidak Bergerak</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Beli</option>
+                                                        <option value="2">Sewa</option>
+                                                        <option value="3">Warisan</option>
+                                                        <option value="4">Hibah</option>
+                                                        <option value="5">Tidak ada</option>
+                                                        <option value="6">Lainnya</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Kendaraan Bermotor yang Dimiliki</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Motor</option>
+                                                        <option value="2">Mobil</option>
+                                                        <option value="3">Tidak Ada</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Status Kepemilikan Kendaraan Bermotor</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Beli</option>
+                                                        <option value="2">Sewa</option>
+                                                        <option value="3">Warisan</option>
+                                                        <option value="4">Hibah</option>
+                                                        <option value="5">Tidak ada</option>
+                                                        <option value="6">Lainnya</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Riwayat Kesehatan -->
+                                    <div class="tab-pane fade show" id="riwayat-kesehatan">
+                                        <h4 class="fw-bolder text-center mb-4">Riwayat Kesehatan Calon Peserta Didik</h4>
+                                        <hr class="horizontal dark mb-4">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Tinggi Badan</label>
+                                                    <input class="form-control" type="number" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Berat Badan</label>
+                                                    <input class="form-control" type="number" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Golongan darah</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">A</option>
+                                                        <option value="2">B</option>
+                                                        <option value="3">O</option>
+                                                        <option value="4">AB</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Penyakit yang pernah diderita/alergi</label>
+                                                    <input class="form-control" type="text" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Penyakit menular yang pernah diderita</label>
+                                                    <input class="form-control" type="text" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Apakah Anda Perokok ?</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Tidak</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Apakah Anda Buta Warna ?</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Tidak</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Apakah punya asuransi kesehatan seperti BPJS atau KIS ?</label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Tidak</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Silakan upload scan/foto kartu asuransi kesehatan seperti BPJS atau KIS</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Upload Dokumen -->
+                                    <div class="tab-pane fade show" id="upload-dokumen">
+                                        <h4 class="fw-bolder text-center">Upload Dokumen Pendukung</h4>
+                                        <center>
+                                            <small class="text-center mb-4">
+                                                <i>Dokumen dapat berupa foto ataupun scan (format PDF) yang jelas dan terbaca.</i>
+                                            </small>
+                                        </center>
+                                        <hr class="horizontal dark mb-4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Kartu Keluarga (KK)</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Pas Foto Terbaru (Berwarna)</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Surat Keterangan Tidak Mampu dari Masjid Terdekat (SKTM)</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Surat Rekomendasi Kepala Sekolah/Wali Kelas/Guru SMP</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Upload Foto Berwarna Rumah yang Ditempati (Tampak Depan, Tampak Samping, Kamar Tidur, Ruang Tamu, Dapur, dan Kamar Mandi)</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Essay/Karangan Bebas Tentang "Peran Saya Sebagai Pemuda di Era Digital"</label>
+                                                    <input class="form-control" type="file" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Pernyataan -->
+                                    <div class="tab-pane fade show" id="pernyataan">
+                                        <h4 class="fw-bolder text-center">Pernyataan</h4>
+                                        <hr class="horizontal dark mb-4">
+                                        <div class="row">
+                                            <h6 class="fw-bolder text-center">Pernyataan Bersedia Mengikuti Rangkaian Seleksi PPDB (Online/Offline)</h6>
+                                            <small class="text-center mb-4">
+                                                Rangkaian seleksi PPDB SMK TI BAZMA TP 2024/2025 dilaksanakan secara online dan offline sesuai dengan kondisi yang berlaku. Silakan mengisi pilihan di bawah menyesuaikan dengan kesanggupan dan kesediaan Calon Peserta Didik.
+                                            </small>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">
+                                                        Saya bersedia mengikuti rangkaian tes yang diujikan, secara online (mempersiapkan secara mandiri device/alat dan kuota internet/jaringan). 
+                                                        Jika tidak, jelaskan alasannya di bawah
+                                                    </label><br><br>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Yang Lain</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">
+                                                        Saya bersedia mengikuti serangkaian tes yang diujikan secara offline di SMK TI BAZMA (Ciampea, Kab-Bogor)  bit.ly/lokasismktibazma (mengadakan akomodasi dan transportasi secara pribadi). 
+                                                        Jika tidak, jelaskan alasannya di bawah
+                                                    </label>
+                                                    <small><i>Khususnya Calon Peserta Didik yang berdomisili di JABODETABEK </i></small>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Yang Lain</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <hr class="horizontal dark mb-4 mt-4">
+                                            <h6 class="fw-bolder">Pernyataan Calon  Peserta Didik</h6>
+                                            <small class="mb-4">
+                                                Saya dengan sungguh-sungguh menyatakan bahwa :  
+                                                <ol>
+                                                    <li>
+                                                        Seluruh  pernyataan  data  dan  informasi  beserta  seluruh  dokumen  yang  saya lampirkan dalam berkas pendaftaran PPDB SMK TI BAZMA TP 2024-2025 adalah benar;
+                                                    </li>
+                                                    <li>
+                                                        Apabila  diperlukan,  saya  bersedia  memberikan  informasi  lebih  lanjut  untuk melengkapi dokumen pendaftaran ini.
+                                                    </li>
+                                                </ol>
+
+                                                Demikian  pernyataan  ini  saya  buat  dengan  sebenarnya  dan  penuh  rasa  tanggung jawab.
+                                            </small>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <br>
+                                                    <label for="example-text-input" class="form-control-label">
+                                                        Saya bersedia mengikuti rangkaian tes yang diujikan, secara online (mempersiapkan secara mandiri device/alat dan kuota internet/jaringan). 
+                                                        Jika tidak, jelaskan alasannya di bawah
+                                                    </label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Yang Lain</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">
+                                                        Saya bersedia mengikuti serangkaian tes yang diujikan secara offline di SMK TI BAZMA (Ciampea, Kab-Bogor)  bit.ly/lokasismktibazma (mengadakan akomodasi dan transportasi secara pribadi). 
+                                                        Jika tidak, jelaskan alasannya di bawah
+                                                    </label>
+                                                    <small><i>Khususnya Calon Peserta Didik yang berdomisili di JABODETABEK </i></small>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="">Pilih</option>
+                                                        <option value="1">Ya</option>
+                                                        <option value="2">Yang Lain</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <hr class="horizontal dark mb-4 mt-4">
+                                            <h6 class="fw-bolder">Pernyataan Calon  Peserta Didik</h6>
+                                            <small class="mb-4">
+                                                Saya dengan sungguh-sungguh menyatakan bahwa :  
+                                                <ol>
+                                                    <li>
+                                                        Seluruh  pernyataan  data  dan  informasi  beserta  seluruh  dokumen  yang  dilampirkan dalam berkas pendaftaran PPDB SMK TI BAZMA TP 2024-2025 adalah benar;
+                                                    </li>
+                                                    <li>
+                                                        Saya mendukung dan memberi izin anak/tanggungan saya dalam mengikuti keseluruhan rangkaian seleksi PPDB SMK TI BAZMA yang ditentukan, jika mengundurkan diri maka bersedia mengembalikan biaya seleksi yang telah dikeluarkan;
+                                                    </li>
+                                                    <li>
+                                                        Apabila anak/tanggungan saya dinyatakan lolos seleksi maka saya memberi izin untuk bertempat tinggal di asrama selama masa pendidikan berlangsung.
+                                                    </li>
+                                                </ol>
+                                                
+                                                Demikian  pernyataan  ini  saya  buat  dengan  sebenarnya  dan  penuh  rasa  tanggung jawab.
+                                            </small>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">
+                                                        Apabila di kemudian hari ditemukan pelanggaran atas pernyataan tersebut, maka saya siap menerima keputusan yang ditetapkan oleh pihak SMK TI BAZMA.
+                                                    </label>
+                                                    <select class="form-control" name="" id="">
+                                                        <option value="1">Ya</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
