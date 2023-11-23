@@ -21,6 +21,14 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
+Route::get('/informasi', function () {
+    return view('frontend.informasi');
+});
+
+Route::get('/kontak', function () {
+    return view('frontend.kontak');
+});
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;
