@@ -66,7 +66,7 @@
                 <div class="nav-wrapper position-relative end-0 mb-3">
                     <ul class="nav nav-pills nav-fill p-1" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#data-diri" role="tab" aria-controls="profile" aria-selected="true">
+                            <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#data-diri" role="tab" aria-controls="profile" aria-selected="true" >
                             Step 1
                             </a>
                         </li>

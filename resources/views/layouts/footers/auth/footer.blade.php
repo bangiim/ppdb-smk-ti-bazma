@@ -7,7 +7,7 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script>,
-                    theme <i class="fa fa-heart"></i> by
+                    theme by
                     <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
                     &
                     <a href="https://www.updivision.com" class="font-weight-bold" target="_blank">UPDIVISION</a>
